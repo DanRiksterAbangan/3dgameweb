@@ -1,5 +1,10 @@
 import React from 'react'
 import Button from './Button'
+import AnimatedTitle from './AnimatedTitle'
+
+const playNow = [
+    { href: 'https://exodus-rising.com/login' },
+];
 
 const ImageClipBox = ({src, clipClass}) => (
     <div className={clipClass}>
@@ -42,11 +47,19 @@ const Contact = () => {
                     Join Exodus Rising
                 </p>
 
-                <p className="special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]">
+                {/* <p className="special-font z-10 mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]">
                     Let's Build the <br/> New Era of <br/> Gaming Together.
-                </p>
+                </p> */}
 
-                <Button title="contact-us" containerClass="mt-10 cursor-pointer" />
+                <AnimatedTitle 
+                    title="Where Individuals <br /> Meet Greatness"
+                    sectionId="#contact"
+                    containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10 text-center justify-center"
+                />
+
+                <a href={playNow[0].href} target='_blank' rel="noopener noreferrer" className="text-white transition-colors duration-500 ease-in-out hover:text-blue-600 text-sm">
+                    <Button id="playNow-button" title="contact us" containerClass="mt-10 cursor-pointer" />
+                </a>
             </div>
         </div>
     </div>

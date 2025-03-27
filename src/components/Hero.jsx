@@ -7,6 +7,10 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger)
 
+const playNow = [
+    { href: 'https://exodus-rising.com/login' },
+];
+
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
     const [hasClicked, setHasClicked] = useState(false);
@@ -80,7 +84,7 @@ const Hero = () => {
     const getVideoSource = (index) => `videos/hero-${index}.mp4`;
 
     return (
-        <div className="relative h-dvh w-screen overflow-x-hidden">
+        <div id="home" className="relative h-dvh w-screen overflow-x-hidden">
 
             {isLoading && (
                 <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
@@ -135,53 +139,52 @@ const Hero = () => {
             </div>
 
             <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-100">
-                Roh<b>a</b>n
+                <a href={playNow[0].href} target='_blank' rel="noopener noreferrer" className="text-white transition-colors duration-500 ease-in-out hover:text-blue-600 text-2xl">
+                    <Button 
+                        id="playNow-button" 
+                        title="Play Now" 
+                        leftIcon={<TiLocationArrow />} 
+                        containerClass="!bg-yellow-300 flex-center gap-1"
+                    />     
+                </a>
+                Exodus Rising
             </h1>
 
-            <div className="absolute left-0 top-0 z-40 size-full">
+            <div className="absolute left-0 top-0 z-10 size-full">
                 <div className="mt-24 px-5 sm:px-10">
                     <h1 className="special-font hero-heading text-blue-100">
-                        Exodus Risi<b>n</b>g
+                        Rohan
                     </h1>
 
                     <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-                        The Best Game of 2025
-                        <br />
-                        Be the Best
+                        The Latest Server in 2025.
                     </p>
-
-                    <Button 
-                        id="watch-trailer" 
-                        title="Watch Trailer" 
-                        leftIcon={<TiLocationArrow />} 
-                        containerClass="!bg-yellow-300 flex-center gap-1"
-                    />
                 </div>
             </div>
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-            Roh<b>a</b>n
+            <a href={playNow[0].href} target='_blank' rel="noopener noreferrer" className="text-white transition-colors duration-500 ease-in-out hover:text-blue-600 text-2xl">
+                <Button 
+                    id="playNow-button" 
+                    title="Play Now" 
+                    leftIcon={<TiLocationArrow />} 
+                    containerClass="!bg-yellow-300 flex-center gap-1"
+                />     
+            </a>
+            Exodus Rising
         </h1>
+        
 
         <div className="absolute left-0 top-0 size-full">
             <div className="mt-24 px-5 sm:px-10">
                 <h1 className="special-font hero-heading text-black">
-                    Exodus Risi<b>n</b>g
+                    Rohan
                 </h1>
 
                 <p className="mb-5 max-w-64 font-robert-regular text-black">
-                    The Best Game of 2025
-                    <br />
-                    Be the Best
+                    The Latest Server in 2025.
                 </p>
-
-                <Button 
-                    id="watch-trailer" 
-                    title="Watch Trailer" 
-                    leftIcon={<TiLocationArrow />} 
-                    containerClass="!bg-yellow-300 flex-center gap-1"
-                />
             </div>
         </div>
 

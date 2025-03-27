@@ -4,7 +4,11 @@ import { TiLocationArrow } from 'react-icons/ti';
 import { useWindowScroll } from 'react-use';
 import gsap from 'gsap';
 
-const navItems = ['Nexus', 'Vault', 'Prologue', 'About', 'Contact'];
+const navItems = ['Home', 'About', 'Features', 'Story', 'Contact'];
+
+const playNow = [
+    { href: 'https://exodus-rising.com/login' },
+];
 
 const Navbar = () => {
     const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -61,7 +65,9 @@ const Navbar = () => {
                 <div className="flex items-center gap-7">
                     <img src="/img/exodusLogoNoBG.png" alt="Exodus Rising" className="w-10" />
 
-                    <Button id="playNow-button" title="Play Now" rightIcon={<TiLocationArrow />} containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1" />
+                    <a href={playNow[0].href} target='_blank' rel="noopener noreferrer" className="text-white transition-colors duration-500 ease-in-out hover:text-blue-600 text-2xl">
+                        <Button id="playNow-button" title="Play Now" rightIcon={<TiLocationArrow />} containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1" />
+                    </a>
                 </div>
 
                 <div className="flex h-full items-center">

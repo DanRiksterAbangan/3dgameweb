@@ -4,6 +4,10 @@ import gsap from 'gsap';
 import RoundedCorners from './RoundedCorners';
 import Button from './Button';
 
+const playNow = [
+    { href: 'https://exodus-rising.com/login' },
+];
+
 const Story = () => {
     const frameRef = useRef('null');
 
@@ -47,12 +51,12 @@ const Story = () => {
     <section id="story" className="min-h-dvh w-screen bg-black text-blue-50">
         <div className="flex size-full flex-col items-center py-10 pb-24">
             <p className="font-general text-sm uppercase md:text-[10px]">
-                The Multiversal IP World
+                The Multiversal Rohan World
             </p>
 
             <div className="relative size-full">
                 <AnimatedTitle 
-                title="The Story of the <br /> Hidden Realm"
+                title="Start Your <br />Journey Here"
                 sectionId="#story"
                 containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10 text-center justify-center"
                 />
@@ -60,8 +64,8 @@ const Story = () => {
                 <div className="story-img-container">
                     <div className="story-img-mask">
                         <div className="story-img-content">
-                            <img src="/img/entrance.webp"
-                                 alt="Entrance Image"
+                            <img src="/img/IMAGESCANUSED/293305189_365289825772651_1105030258159310653_n.jpg"
+                                 alt="Rohan Wallpaper"
                                  className="object-contain"
                                  ref={frameRef}
                                  onMouseLeave={handleMouseLeave}
@@ -83,7 +87,9 @@ const Story = () => {
                         and shape your fate amidst infinite opportunities.
                     </p>
 
-                    <Button id="realm-button" title="Play Now" containerClass="mt-5" />
+                    <a href={playNow[0].href} target='_blank' rel="noopener noreferrer" className="text-white transition-colors duration-500 ease-in-out hover:text-blue-600 text-sm">
+                        <Button id="playNow-button" title="Play Now" containerClass="mt-5" />
+                    </a>
                 </div>
             </div>
         </div>

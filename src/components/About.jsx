@@ -51,18 +51,18 @@ const About = () => {
 
                 <div className="about-subtext">
                     <p>
-                        The Best Game of 2025.
+                        The Latest Server in 2025.
                     </p>
 
-                    <p>
-                        Be the Best.
+                    <p className="justify-center text-center">
+                        Play Now.
                     </p>
                 </div>
             </div>
 
             <div className="h-[100vh] w-screen relative" id="clip">
                 <div className="mask-clip-path about-image">
-                    <img src="img/about.webp" alt="Background" className="absolute left-0 top-0 size-full object-cover" />
+                    <img src="img/IMAGESCANUSED/bg-visual.jpg" alt="Rohan Wallpaper" className="absolute left-0 top-0 size-full object-cover" />
                 </div>
             </div>
         </div>

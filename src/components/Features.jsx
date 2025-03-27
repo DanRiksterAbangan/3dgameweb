@@ -66,25 +66,25 @@ const BentoCard = ({ src, title, description }) => {
 
 const Features = () => {
   return (
-    <section className="bg-black pb-52">
+    <section className="bg-black pb-52" id="features">
         <div className="container mx-auto px-3 md:px-10">
             <div className="px-5 py-32">
                 <p className="font-circular-web text-lg text-blue-50">
                     Play Now!
                 </p>
                 <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-                    Immerse yourself in a rich and ever-expanding universe where a vibrant 
-                    array of products converge into an interconnected overlay 
-                    experience on your world.
+                    Step into a dynamic and continuously evolving world where a diverse 
+                    range of players seamlessly blend together, creating an interconnected 
+                    experience that enhances your reality.
                 </p>
             </div>
 
             <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
                 <BentoCard 
                     src="videos/feature-1.mp4"
-                    title={<>radi<b>a</b>nt</>}
-                    description="A cross-platform metagame app , turning your activities 
-                    across Web2 and Web3 games into a rewarding adventure."
+                    title={<>MMO<b>R</b>PG</>}
+                    description="Transform your in-game activities into an epic, 
+                    rewarding adventure."
                 />
             </BentoTilt>
 
@@ -94,7 +94,7 @@ const Features = () => {
                         src="videos/feature-2.mp4"
                         title={<span className="text-lg sm:text-base md:text-xl lg:text-4xl">Rohan</span>}
                         description={<span className="text-sm sm:text-xs md:text-base">
-                            A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure.
+                            Turn your in-game journeys and achievements into an immersive experience.
                         </span>}
                     />
                 </BentoTilt>
@@ -104,7 +104,7 @@ const Features = () => {
                         src="videos/feature-3.mp4"
                         title={<span className="text-lg sm:text-base md:text-xl lg:text-4xl">Exodus</span>}
                         description={<span className="text-sm sm:text-xs md:text-base">
-                            A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure.
+                            A mass departure of people towards a new start.
                         </span>}
                     />
                 </BentoTilt>
@@ -114,7 +114,7 @@ const Features = () => {
                         src="videos/feature-4.mp4"
                         title={<span className="text-lg sm:text-base md:text-xl lg:text-4xl">Rising</span>}
                         description={<span className="text-sm sm:text-xs md:text-base">
-                            A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure.
+                           The act of growing in intensity or importance.
                         </span>}
                     />
                 </BentoTilt>
