@@ -47,7 +47,7 @@ const About = () => {
                     Welcome to
                 </h2>
 
-                <AnimatedTitle title="Ex<b>o</b>dus <b>R</b>ising" containerClass="special-font hero-heading z-20 mt-5 !text-black text-center" />
+                <AnimatedTitle title="Exodus Rising" containerClass="special-font hero-heading z-20 mt-5 !text-black text-center" />
 
                 <div className="about-subtext">
                     <p>
